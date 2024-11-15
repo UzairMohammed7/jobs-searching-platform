@@ -67,7 +67,7 @@ class LoginRoute extends Component {
     return (
       <div className="login-app-container">
         <form
-          className="login-card-container"
+          className="login-form"
           onSubmit={this.onSubmitLoginForm}
         >
           <img
@@ -100,6 +100,7 @@ class LoginRoute extends Component {
                   type="text"
                   placeholder="Password"
                   onChange={this.onChangePassword}
+                  className="input-username"
                 />
                 <FaEyeSlash onClick={this.onClickToShowPassword} />
               </div>
